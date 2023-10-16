@@ -5,8 +5,6 @@
  * main - description
  * Return: Always 0
  */
-#include <stdio.h>
-
 int main(void)
 {
 	int i;
@@ -14,7 +12,7 @@ int main(void)
 	for (i = 0; i < 10; i++)
 	{
 		putchar(i + '0');
-		if (i != 9) 
+		if (i != 9)
 		{
 			putchar(',');
 			putchar(' ');
@@ -23,4 +21,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
