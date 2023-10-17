@@ -3,7 +3,7 @@
 
 /**
  * _islower - main description
- * @c: variable
+ * @c: variabl
  *
  * Return: Always 0.
  */
