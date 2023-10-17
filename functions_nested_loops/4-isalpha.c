@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _islower - main description
+ * _isalpha - main description
  * @c: variabl
  *
  * Return: Always 0.
