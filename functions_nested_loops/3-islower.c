@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - main description
+ * _islower - main description
+ * @c: variable
  *
  * Return: Always 0.
  */
