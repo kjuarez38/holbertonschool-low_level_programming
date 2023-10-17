@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _abs - main description
+ * add - main description
  * @r: variable
  * @l: variable
  * Return: Always 0.
