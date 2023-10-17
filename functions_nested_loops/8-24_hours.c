@@ -12,8 +12,6 @@ void jack_bauer(void)
 
 	while (h != 24)
 	{
-		m++;
-
 		if (m == 60)
 		{
 			h++;
@@ -29,6 +27,7 @@ void jack_bauer(void)
 		if (m <= 9)
 			printf("0");
 		printf("%i\n", m);
+		m++;
 
 	}
 }
