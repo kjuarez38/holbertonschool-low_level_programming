@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_last_digit - main description
- * @r: variable
+ * jack_bauer - main description
  * Return: Always 0.
  */
 void jack_bauer(void)
