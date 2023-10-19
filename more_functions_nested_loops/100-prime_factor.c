@@ -25,6 +25,6 @@ int main(void)
 			large = i;
 		}
 	}
-	return (0);
+	return (large);
 
 }
