@@ -15,9 +15,12 @@ int main(void)
 	if (n % 2 == 0)
 	{
 		large = 2;
-		return (large);
+		while (n % 2 == 0)
+		{
+			n /= 2;
+		}
 	}
-	for (i = 3 ; i < n ; i = i + 2)
+	for (i = 3 ; i * i <= n ; i = i + 2)
 	{
 		while (n % i == 0)
 		{
@@ -25,6 +28,11 @@ int main(void)
 			large = i;
 		}
 	}
-	return (large);
+	if (n > 2)
+	{
+		large = n;
+	}
+	printf("%d\n", large);
+	return (0);
 
 }
