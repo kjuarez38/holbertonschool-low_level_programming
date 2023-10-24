@@ -5,7 +5,7 @@
 #include "main.h"
 
 /**
- * *_strcat - point
+ * *_strncat - point
  * @dest : pointers
  * @src : pointer
  * @n : variable
