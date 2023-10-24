@@ -13,7 +13,7 @@ char *cap_string(char *str)
 {
 	char *tab = " \n\t,;.!?\"\'(){}";
 	int i = 0;
-	long unsigned int j = 0;
+	unsigned long int j = 0;
 
 	while (str[i] != '\0')
 	{
