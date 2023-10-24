@@ -1,29 +1,28 @@
-#include "main.h"
-#include <string.h>
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
+#include "main.h"
 
 /**
- * puts_half - check the code
- * @str: pointer
- *
- * Return: Always 0.
+ * puts_half - point
+ * @str : char of string
+ * Return: Always 1 (True) or 0 (False)
  */
 void puts_half(char *str)
 {
-	int i;
 	int len = 0;
+	int s = 0;
+	int i = 0;
 
-	while (str[len] != '\0')
-	{
+	for (; str[i] != 0; i++)
 		len++;
-	}
+
+	s = len / 2;
 
 	if (len % 2 != 0)
-		len++;
+		s = (len + 1) / 2;
 
-	for (i = len / 2 ; i < len  ; i++)
-	{
-		putchar(str[i]);
-	}
-
+	for (; s < len; s++)
+		putchar(str[s]);
+	putchar('\n');
 }
