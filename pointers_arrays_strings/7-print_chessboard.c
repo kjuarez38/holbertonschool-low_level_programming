@@ -5,7 +5,7 @@
 
 /**
  * print_chessboard - check the code
- * @(*a)[8]: pointer array
+ * @a: pointer array
  *
  * Return: Always 0.
  */
