@@ -12,14 +12,17 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	size_t s2 = strlen(s);
 
-	for (i = 0 ; i < s2 ; i++)
+	i = 0;
+
+	while (s[i] != '\0')
 	{
+		i++;
 		if (s[i] == c)
 		{
 			return (s + i);
 		}
+
 	}
-	return (NULL);
+	return ('\0');
 }
