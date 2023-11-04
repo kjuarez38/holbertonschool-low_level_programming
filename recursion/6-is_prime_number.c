@@ -4,8 +4,9 @@
 #include <string.h>
 
 /**
- * is_prime_number - check the code
+ * prime - check the code
  * @n: variable
+ * @i: variable
  *
  * Return: Always 0.
  */
@@ -25,7 +26,12 @@ int prime(int n, int i)
 	return (prime(n, i + 1));
 
 }
-
+/**
+ * is_prime_number - check the code
+ * @n: variable
+ *
+ * Return: Always 0.
+ */
 int is_prime_number(int n)
 {
 	return (prime(n, 2));
