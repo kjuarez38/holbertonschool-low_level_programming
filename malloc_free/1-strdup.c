@@ -15,17 +15,17 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	new_str = malloc((strlen(str) + 1) * sizeof(char));
 
 	if (new_str == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	strcpy(new_str, str);
-	return new_str;
+	return (new_str);
 }
 
