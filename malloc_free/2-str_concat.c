@@ -1,37 +1,43 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-
+#include <stdio.h>
 /**
- * str_concat - main description
- * @s1: string number one
- * @s2: string number two
+ * str_concat - point
+ * @s1 :copy this string
+ * @s2: with this
  *
- * Return: 0.
+ * Return: Always 1 (True) or 0 (False)
  */
 char *str_concat(char *s1, char *s2)
 {
-	int str1 = strlen(s1);
-        int str2 = strlen(s2);
-	int i;
-	char *a;
+	char *ret;
+	int len_1 = 0;
+	int len_2 = 0;
+	int index = 0;
 
-	if (s1 == NULL || s2 == NULL)
-		return NULL;
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	a = malloc((str1 + str2 + 1) * sizeof(char));
+	while (s1[len_1])
+		len_1++;
 
-	if (a == NULL)
-		return NULL;
+	while (s2[len_2])
+		len_2++;
 
-	for (i = 0; i < str1; i++)
-		a[i] = s1[i];
+	ret = malloc(sizeof(char) * (len_1 + len_2) + 1);
 
-	for (i = 0; i < str2; i++)
-		a[i + str1] = s2[i];
+	if (ret == NULL)
+		return (NULL);
 
-	a[str1 + str2] = '\0';
+	for (; index <= (len_1 + len_2); index++)
+	{
+		if (index < len_1)
+			ret[index] = s1[index];
+		else
+			ret[index] = s2[index - (len_1)];
+	}
 
-	return a;
+	return (ret);
 }
