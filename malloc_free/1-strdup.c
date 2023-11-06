@@ -21,6 +21,11 @@ char *_strdup(char *str)
 
 	new_str = (malloc(strlen(str) + 1 * sizeof(char)));
 
+	if (new_str == NULL)
+        {
+                return (NULL);
+        }
+
 	strcpy(new_str, str);
 	return (new_str);
 }
