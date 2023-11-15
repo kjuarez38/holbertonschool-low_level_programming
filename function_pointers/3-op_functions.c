@@ -7,6 +7,7 @@
  *
  * @a: data
  * @b: data
+ * Return: Always 0.
  */
 int op_add(int a, int b)
 {
@@ -18,6 +19,7 @@ int op_add(int a, int b)
  *
  * @a: data
  * @b: data
+ * Return: Always 0.
  */
 int op_sub(int a, int b)
 {
@@ -29,6 +31,7 @@ int op_sub(int a, int b)
  *
  * @a: data
  * @b: data
+ * Return: Always 0.
  */
 int op_mul(int a, int b)
 {
@@ -39,7 +42,8 @@ int op_mul(int a, int b)
  * op_div - division
  *
  * @a: data
- * @b: data
+ * @b: datai
+ * Return: Always 0.
  */
 int op_div(int a, int b)
 {
@@ -56,6 +60,7 @@ int op_div(int a, int b)
  *
  * @a: data
  * @b: data
+ * Return: Always 0.
  */
 int op_mod(int a, int b)
 {
