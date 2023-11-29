@@ -1,13 +1,9 @@
 #include "lists.h"
 
 /**
- * struct dlistint_s - doubly linked list
- * @n: integer
- * @prev: points to the previous node
- * @next: points to the next node
- *
- * Description: doubly linked list node structure
- *
+ * print_dlistint - Function
+ * @h: node element
+ * Return: Number of element in @h.
  */
 size_t print_dlistint(const dlistint_t *h)
 {
@@ -15,6 +11,7 @@ size_t print_dlistint(const dlistint_t *h)
 
 	while (h != NULL)
 	{
+		printf("%d\n", h->n);
 		++cont;
 		h = h->next;
 	}
