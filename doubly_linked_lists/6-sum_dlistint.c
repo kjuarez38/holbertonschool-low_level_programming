@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * dlistint_len - Function
- * @h: node element
- * Return: Number of element in @h.
+ * sum_dlistint - Function
+ * @head: node element
+ * Return: Sum of element in @head.
  */
 int sum_dlistint(dlistint_t *head)
 {
@@ -14,9 +14,8 @@ int sum_dlistint(dlistint_t *head)
 
 	while (head != NULL)
 	{
-		head->n = sum;
+		sum += head->n;
 		head = head->next;
-		sum++;
 	}
 	return (sum);
 }
