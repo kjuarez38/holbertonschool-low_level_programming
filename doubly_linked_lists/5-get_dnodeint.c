@@ -1,8 +1,9 @@
 #include "lists.h"
 
 /**
- * free_dlistint - Function
+ * get_dnodeint_at_index - Function
  * @head: node element
+ * @index: node to return
  * Return: Nothing.
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
